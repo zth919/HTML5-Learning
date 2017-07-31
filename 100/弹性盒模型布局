@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>100度</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		section{
+			width: 914px;
+			height: 1300px;
+			/*background-color: #666666;*/
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.h1{
+			width: 914px;
+			height: 30px;
+			border: 1px solid #dadada;
+			background-color: #e9e9e9;
+		}
+		.logo{
+			width: 914px;
+			height: 80px;
+			/*background-color: yellow;*/
+			display: flex;
+			justify-content: space-between;
+		}
+		.logo .left{
+			width: 236px;
+			height: 81px;
+			/*background-color: red;*/
+			background-image: url(images/logo.gif);
+		}
+		.logo .right{
+			width: 327px;
+			height: 64px;
+			/*background-color: pink;*/
+			background-image: url(images/headrimg.gif);
+			align-self: center;
+		}
+		.img{
+			width: 914px;
+			height: 215px;
+			/*background-color: red;*/
+			background-image: url(images/banner.jpg);
+		}
+		article{
+			width: 914px;
+			height: 850px;
+			/*background-color: skyblue;*/
+			display: flex;
+			justify-content: space-between;
+		}
+		article .left{
+			width: 326px;
+			height: 850px;
+			/*background-color: green;*/
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		article .left .top{
+			width: 326px;
+			height: 284px;
+		}
+		article .left .middle{
+			width: 326px;
+			height: 200px;
+			background-color: #ececea;
+		}
+		article .left .middle .top{
+			width: 326px;
+			height: 29px;
+			border-bottom: 1px solid black;
+		}
+		article .left .middle .top a{
+			text-decoration: none;
+			line-height: 30px;
+			background-color: #363636;
+			font-weight: bold;
+			color: white;
+			margin-left: 10px;
+		}
+		article .left .middle ul{
+			width: 326px;
+			height: 170px;
+			/*background-color: blue;*/
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: space-around;
+		}
+		article .left .middle ul li{
+			width: 140px;
+			height: 66px;
+			background-color: #4b4b4b;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		article .left .middle ul li .wenzi{
+			width: 60px;
+			color: white;
+			font-size: 12px;
+		}
+		article .left .bottom{
+			width: 326px;
+			height: 334px;
+			/*background-color: pink;*/
+		}
+		article .left .bottom .top{
+			width: 326px;
+			height: 30px;
+			background-color: #363636;
+		}
+		article .left .bottom .top a{
+			text-decoration: none;
+			line-height: 30px;
+			font-weight: bold;
+			color: white;
+			margin-left: 10px;
+		}
+		article .left .bottom .box{
+			width: 322px;
+			height: 300px;
+			border: 2px solid #d2d2d2;
+			/*background-color: #ff00ff;*/
+		}
+
+
+		article .right{
+			width: 583px;
+			height: 850px;
+			/*background-color: blue;*/
+			display: flex;
+			flex-wrap: wrap;
+		}
+		article .right .div1{
+			width: 583px;
+			height: 40px;
+			background-color: #363636;
+		}
+		article .right .div1 span{
+			line-height: 40px;
+			color: white;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		article .right .div1 a{
+			font-size: 12px;
+			color: white;
+			text-decoration: none;
+		}
+		article .right .div2{
+			width: 583px;
+			height: 117px;
+			/*background-color: red;*/
+			background-image: url(images/hm_rban.jpg);
+		}
+		article .right ul{
+			width: 577px;
+			height: 220px;
+			border: 3px solid #d4d4d4;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: space-around;
+		}
+		article .right ul li{
+			width: 250px;
+			height: 100px;
+			/*background-color: #00ff00;*/
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			/*align-items: center;*/
+		}
+		article .right ul li:nth-child(1){
+			border-bottom: 1px dashed black;
+		}
+		article .right ul li:nth-child(2){
+			border-bottom: 1px dashed black;
+		}
+		article .right ul li .img{
+			width: 68px;
+			height: 68px;
+			border: 2px solid #d4d4d4;
+		}
+		article .right ul li .div_01{
+			width: 140px;
+			font-size: 12px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+		}
+		article .right ul li span{
+			display: block;
+		}
+		article .right .div3{
+			width: 583px;
+			height: 416px;
+			/*background-color: orange;*/
+			display: flex;
+			justify-content: space-between;
+		}
+		article .right .div3 .left{
+			width: 282px;
+			height: 416px;
+		}
+		article .right .div3 .right{
+			width: 282px;
+			height: 416px;
+		}
+		footer{
+			width: 914px;
+			height: 50px;
+			background-color: #383838;
+			display: inline-block;
+			text-align: center;
+			padding-top: 8px;
+		}
+		footer .one a{
+			font-size: 12px;
+			color: white;
+			display: inline-block;
+			text-align: center;
+		}
+		footer .two{
+			margin-top: 5px;
+			font-size: 12px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<header class="h1"></header>
+		<div class="logo">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+		<div class="img"></div>
+		<article>
+			<div class="left">
+				<img src="images/shiping.png" class="top">
+				<div class="middle">
+					<div class="top">
+						<a href="http://www.100du.com/product_video.html" target="_blank">查看更多</a>
+					</div>
+					<ul>
+						<li>
+							<img src="images/20160115_2.jpg" alt="">
+							<div class="wenzi">王府井希尔顿酒店</div>
+						</li>
+						<li>
+							<img src="images/20160112_2.jpg" alt="">
+							<div class="wenzi">励骏酒店</div>
+						</li>
+						<li>
+							<img src="images/20160111_2.jpg" alt="">
+							<div class="wenzi">Arena Club 北京小巨蛋</div>
+						</li>
+						<li>
+							<img src="images/20160109_2.jpg" alt="">
+							<div class="wenzi">Assaggi 尝试 意大利餐厅</div>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<div class="top">
+						<a href="###" target="_blank">免费体验</a>
+					</div>
+					<div class="box">
+						<img src="images/fqbanner.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="div1">
+					<span>HOT博文</span>
+					<a href="http://www.100du.com/product_list.html" target="_blank">查看更多 &gt;&gt;</a>
+				</div>
+				<div class="div2"></div>
+				<ul>
+					<li>
+						<div class="img">
+							<img class="img_01" src="images/hxzz.jpg" alt="">
+						</div>
+						
+						<div class="div_01">
+							<span>好伦哥转型海鲜自助，赌一场华丽旅行！</span>
+							<span>带你去最HOT的地方!</span>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<img class="img_01" src="images/beizidangao3.jpg" alt="">
+						</div>
+						<div class="div_01">
+							<span>这是一个瞎吃的时代，也是一个吃虾的时代</span>
+							<span>带你去最HOT的地方!</span>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<img class="img_01" src="images/beizidangao3.jpg" alt="">
+						</div>
+						<div class="div_01">
+							<span>开门纳福·美美的甜品总是被称为“治愈系的食物”</span>
+							<span>带你去最HOT的地方!</span>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<img class="img_01" src="images/lizidangao.jpg" alt="">
+						</div>
+						<div class="div_01">
+							<span>朴素饱满的栗子甜品，浓滑甜蜜余味纯香，更是难以舍弃的味道！</span>
+							<span>带你去最HOT的地方!</span>
+						</div>
+					</li>
+				</ul>
+				<div class="div3">
+					<div class="left">
+						<img src="images/hm_rtu01.gif" alt="">
+						<img src="images/hm_rtu03.gif" alt="">
+						<img src="images/hm_rtu05.gif" alt="">
+						<img src="images/hm_rtu07.gif" alt="">
+					</div>
+					<div class="right">
+						<img src="images/hm_rtu02.gif" alt="">
+						<img src="images/hm_rtu04.gif" alt="">
+						<img src="images/hm_rtu06.gif" alt="">			
+						<img src="images/hm_rtu08.gif" alt="">
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="one">
+				<a href="http://www.100du.com/shiting.html" target="_blank">网络视听许可证0108251号</a>
+			</div>
+			<span class="two">Copyright©2013 壹百度 100du.com 版权所有</span>
+		</footer>
+	</section>
+</body>
+</html>
